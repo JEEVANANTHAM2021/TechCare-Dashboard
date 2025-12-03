@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@fetch/*": ["src/fetch/*"],
+      "@types/*": ["src/types/"],
+      "@api/*": ["src/api/*"],
+      "@assets/*": ["src/assets/*"]
+    },
+    "allowJs": true,
+    "checkJs": false
+  },
+  "include": ["src/**/*", "public/**/*"]
+}

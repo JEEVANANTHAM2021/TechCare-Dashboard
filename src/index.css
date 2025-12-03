@@ -1,0 +1,89 @@
+/* Importing the Manrope font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
+
+/*  Tailwindcss Layer */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables */
+:root {
+    /* Colors: */
+    --unnamed-color-705aaa: #705AAA; 
+    --unnamed-color-cbc8d4: #CBC8D4; 
+    --activestate_bg_2: #D8FCF7; 
+    --activestate_bg_1: #01F0D0; 
+    --unnamed-color-0bd984: #0BD984; 
+    --unnamed-color-072635: #072635; 
+    --unnamed-color-0c3d5d: #0C3D5D;
+    --unnamed-color-084c77: #084c77;
+    --unnamed-color-055a92: #055A92;
+    --unnamed-color-006aac: #006AAC;
+    --unnamed-color-007bc7: #007BC7; 
+    --unnamed-color-707070: #707070; 
+    --unnamed-color-f6f6f6: #F6F6F6; 
+    --unnamed-color-ededed: #EDEDED;
+    --unnamed-color-000000: #000000;
+    --unnamed-color-878787: #878787;
+    --unnamed-color-ffffff: #FFFFFF;
+    --unnamed-color-ff6200: #FF6200; 
+    
+    /* Font/text values */
+    --unnamed-font-family-manrope: Manrope;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-800: 800; 
+    --unnamed-font-weight-normal: 400; 
+    --unnamed-font-weight-bold: 700; 
+    --unnamed-font-size-14: 14px;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-24: 24px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-19: 19px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-33: 33px;
+    --unnamed-text-transform-titlecase: capitalize;
+}
+
+@layer components {
+    .card-title-24pt {
+        @apply font-manrope text-24pt text-primary-blue;
+    }
+    .inner-card-title-18pt {
+        @apply font-manrope text-18pt text-primary-blue capitalize;
+    }
+    .body-emphasized-14pt {
+        @apply font-manrope text-14pt-bold text-primary-blue;
+    }
+    .body-secondary-info-14pt {
+        @apply font-manrope text-14pt-reg text-secondary-gray;
+    }
+    .body-regular-14 {
+        @apply font-manrope text-14pt-reg text-primary-blue;
+    }
+}
+
+/* Scrollbar - Customs */
+.custom-scrollbar {
+    scrollbar-width: thin; 
+    scrollbar-color: var(--unnamed-color-878787) var(--unnamed-color-f6f6f6); 
+}
+.custom-scrollbar::-wedkit-scrollbar-button{
+    display: none;
+}
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px; 
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--unnamed-color-f6f6f6); 
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--unnamed-color-878787); 
+    border-radius: 10px;
+}
+
+/* Global base style */
+body {
+    font-family: var(--unnamed-font-family-manrope), sans-serif;
+    color: var(--unnamed-color-072635);
+}
