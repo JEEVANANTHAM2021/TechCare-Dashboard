@@ -1,7 +1,6 @@
-
-const API_URL = "https://fedskillstest.coalitiontechnologies.workers.dev";
-const USERNAME = "coalition";
-const PASSWORD = "skills-test";
+const API_URL = import.meta.env.VITE_API_URL;
+const USERNAME = import.meta.env.VITE_USERNAME;
+const PASSWORD = import.meta.env.VITE_PASS;
 
 const getAuthHeader = () => {
   const credentials = `${USERNAME}:${PASSWORD}`;
@@ -15,8 +14,8 @@ export async function fetchPatientByName(name) {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: getAuthHeader()
-      }
+        Authorization: getAuthHeader(),
+      },
     });
 
     if (!res.ok) {
@@ -24,15 +23,20 @@ export async function fetchPatientByName(name) {
     }
 
     const data = await res.json();
+
     if (!Array.isArray(data)) {
       // fallback if api returns single object
       return data.name === name ? data : null;
     }
 
-    const found = data.find((p) => String(p.name).toLowerCase() === String(name).toLowerCase());
+    const found = data.find(
+      (p) =>
+        String(p.name).toLowerCase() === String(name).toLowerCase()
+    );
+
     return found || null;
   } catch (err) {
-    console.error("fetchPatientByName error:", err);
+    // keep throw so UI can handle errors
     throw err;
   }
 }
