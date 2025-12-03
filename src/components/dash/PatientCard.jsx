@@ -21,7 +21,7 @@ const PatientCard = ({ patient }) => {
         <div className="mt-6 space-y-6">
           <div className="flex items-start gap-3">
             <div>
-             <img src="/src/assets/icons/CalendarIcon.png" alt="icon" className="w-[42px] h-[42px]" />
+             <img src="/icons/CalendarIcon.png" alt="icon" className="w-[42px] h-[42px]" />
             </div>
              <div>
               <p className="text-xs font-semibold text-secondary-gray">Date Of Birth</p>
@@ -33,7 +33,7 @@ const PatientCard = ({ patient }) => {
 
           <div className="flex items-start gap-3">
             <div>
-              <img src="/src/assets/icons/gender.png" alt="icon" className="w-[42px] h-[42px]" /></div>
+              <img src="/icons/gender.png" alt="icon" className="w-[42px] h-[42px]" /></div>
               <div>
               <p className="text-xs font-semibold text-secondary-gray">Gender</p>
               <p className="text-sm font-bold text-primary-blue">{patient.gender}</p>
@@ -42,7 +42,7 @@ const PatientCard = ({ patient }) => {
 
           <div className="flex items-start gap-3">
             <div>
-              <img src="src/assets/icons/PhoneIcon.png" alt="icon" className="w-[42px] h-[42px]" /></div>
+              <img src="/icons/PhoneIcon.png" alt="icon" className="w-[42px] h-[42px]" /></div>
               <div>
               <p className="text-xs text-start font-semibold text-secondary-gray">Contact Info</p>
               <p className="text-sm font-bold text-primary-blue">{patient.phone_number}</p>
@@ -51,7 +51,7 @@ const PatientCard = ({ patient }) => {
 
           <div className="flex items-start gap-3">
             <div>
-              <img src="src/assets/icons/PhoneIcon.png" alt="icon" className="w-[42px] h-[42px]" /></div>
+              <img src="/icons/PhoneIcon.png" alt="icon" className="w-[42px] h-[42px]" /></div>
               <div>
               <p className="text-xs font-semibold text-secondary-gray">Emergency Contacts</p>
               <p className="text-sm text-start font-bold text-primary-blue">{patient.emergency_contact}</p>
@@ -60,7 +60,7 @@ const PatientCard = ({ patient }) => {
 
           <div className="flex items-start gap-3">
             <div>
-              <img src="src/assets/icons/ShieldIcon.png" alt="icon" className="w-[42px] h-[42px]" /></div>
+              <img src="/icons/ShieldIcon.png" alt="icon" className="w-[42px] h-[42px]" /></div>
               <div>
               <p className="text-xs text-start font-semibold text-secondary-gray">Insurance Provider</p>
               <p className="text-sm font-bold text-primary-blue">{patient.insurance_type}</p>
