@@ -6,9 +6,9 @@ const Card = ({ title, data }) => {
 
   // Icon mapping 
   const iconMap = {
-    "Respiratory Rate": "/src/assets/icons/LungIcon.png",
-    "Temperature": "/src/assets/icons/TempIcon.png",
-    "Heart Rate": "/src/assets/icons/HeartIcon.png",
+    "Respiratory Rate": "/icons/LungIcon.png",
+    "Temperature": "/icons/TempIcon.png",
+    "Heart Rate": "/icons/HeartIcon.png",
   };
 
   const icon = iconMap[title] || null;

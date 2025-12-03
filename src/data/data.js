@@ -4,7 +4,7 @@ export const DUMMY_PATIENT = [
     name: "Emily Williams",
     gender: "Female",
     age: 28,
-    image: "/src/assets/images/Patient-1.png",
+    image: "/images/Patient-1.png",
     isActive: false
   },
   {
@@ -12,7 +12,7 @@ export const DUMMY_PATIENT = [
     name: "Ryan Johnson",
     gender: "Male",
     age: 34,
-    image: "/src/assets/images/Patient-2.png",
+    image: "/images/Patient-2.png",
     isActive: false
   },
   {
@@ -20,7 +20,7 @@ export const DUMMY_PATIENT = [
     name: "Brandon Mitchell",
     gender: "Male",
     age: 30,
-    image: "/src/assets/images/Patient-3.png",
+    image: "/images/Patient-3.png",
     isActive: false
   },
   {
@@ -28,7 +28,7 @@ export const DUMMY_PATIENT = [
     name: "Jessica Taylor",
     gender: "Female",
     age: 28,
-    image: "/src/assets/images/jessica-taylor.png",
+    image: "/images/jessica-taylor.png",
     isActive: true
   },
   {
@@ -36,7 +36,7 @@ export const DUMMY_PATIENT = [
     name: "Samantha Johnson",
     gender: "Female",
     age: 24,
-    image: "/src/assets/images/Patient-5.png",
+    image: "/images/Patient-5.png",
     isActive: false
   },
   {
@@ -44,7 +44,7 @@ export const DUMMY_PATIENT = [
     name: "Ashley Martinez",
     gender: "Female",
     age: 45,
-    image: "/src/assets/images/Patient-6.png",
+    image: "/images/Patient-6.png",
     isActive: false
   },
   {
@@ -52,7 +52,7 @@ export const DUMMY_PATIENT = [
     name: "Olivia Brown",
     gender: "Female",
     age: 32,
-    image: "/src/assets/images/Patient-7.png",
+    image: "/images/Patient-7.png",
     isActive: false
   },
   {
@@ -60,7 +60,7 @@ export const DUMMY_PATIENT = [
     name: "Tyler Davis",
     gender: "Male",
     age: 10,
-    image: "/src/assets/images/Patient-8.png",
+    image: "/images/Patient-8.png",
     isActive: false
   },
   {
@@ -68,7 +68,7 @@ export const DUMMY_PATIENT = [
     name: "Kevin Anderson",
     gender: "Male",
     age: 33,
-    image: "/src/assets/images/Patient-9.png",
+    image: "/images/Patient-9.png",
     isActive: false
   },
   {
@@ -76,7 +76,7 @@ export const DUMMY_PATIENT = [
     name: "Dylan Thompson",
     gender: "Male",
     age: 30,
-    image: "/src/assets/images/Patient-10.png",
+    image: "/images/Patient-10.png",
     isActive: false
   },
   {
@@ -84,7 +84,7 @@ export const DUMMY_PATIENT = [
     name: "Nathan Evans",
     gender: "Male",
     age: 32,
-    image: "/src/assets/images/Patient-11.png",
+    image: "/images/Patient-11.png",
     isActive: false
   },
   {
@@ -92,7 +92,7 @@ export const DUMMY_PATIENT = [
     name: "Brian Nelson",
     gender: "Male",
     age: 37,
-    image: "/src/assets/images/Patient-12.png",
+    image: "/images/Patient-12.png",
     isActive: false
   }
 ];
